@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { CardList } from './components/card-list/card-list-component';
+import { SearchBox } from './components/search-box/search-box.component';
 
 class App extends Component {
 	constructor() {
 		super();
 
 		this.state = {
-			monsters: []
+			monsters: [],
+			search_field: ''
 		};
 	}
 
@@ -18,17 +20,19 @@ class App extends Component {
 			.then((data) => this.setState({ monsters: data }));
 	}
 	render() {
+		const { monsters, search_field } = this.state;
+		const filteredMonster = monsters.filter((monster) =>
+			monster.name.toLowerCase().includes(search_field.toLowerCase())
+		);
 		return (
 			<div className="App">
-				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
-					<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-						<CardList name="farjun">
-							{this.state.monsters.map((monsters) => <h1 key={monsters.id}>{monsters.name}</h1>)}
-						</CardList>
-					</a>
-					<button onClick={() => this.setState({ string: 'hello farrel' })}>Change text</button>
-				</header>
+				<SearchBox
+					placeholder="search monster"
+					handleChange={(e) => {
+						this.setState({ search_field: e.target.value }, () => console.log(this.state.search_field));
+					}}
+				/>
+				<CardList monsters={filteredMonster} />
 			</div>
 		);
 	}
