@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/farjun-rolodex/static/css/main.aed9729e.chunk.css",
+    "main.js": "/farjun-rolodex/static/js/main.461f01ab.chunk.js",
+    "main.js.map": "/farjun-rolodex/static/js/main.461f01ab.chunk.js.map",
+    "runtime-main.js": "/farjun-rolodex/static/js/runtime-main.9d2c69b7.js",
+    "runtime-main.js.map": "/farjun-rolodex/static/js/runtime-main.9d2c69b7.js.map",
+    "static/js/2.91e906d3.chunk.js": "/farjun-rolodex/static/js/2.91e906d3.chunk.js",
+    "static/js/2.91e906d3.chunk.js.map": "/farjun-rolodex/static/js/2.91e906d3.chunk.js.map",
+    "index.html": "/farjun-rolodex/index.html",
+    "precache-manifest.7a4daf3021a21fd51a31b4b63deebfc7.js": "/farjun-rolodex/precache-manifest.7a4daf3021a21fd51a31b4b63deebfc7.js",
+    "service-worker.js": "/farjun-rolodex/service-worker.js",
+    "static/css/main.aed9729e.chunk.css.map": "/farjun-rolodex/static/css/main.aed9729e.chunk.css.map",
+    "static/js/2.91e906d3.chunk.js.LICENSE.txt": "/farjun-rolodex/static/js/2.91e906d3.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/farjun-rolodex/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d2c69b7.js",
+    "static/js/2.91e906d3.chunk.js",
+    "static/css/main.aed9729e.chunk.css",
+    "static/js/main.461f01ab.chunk.js"
+  ]
+}
